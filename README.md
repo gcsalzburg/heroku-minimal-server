@@ -5,7 +5,7 @@ This is the easiest way to serve a frontend (HTML/JS) site that has no build ste
 
 ## Setup
 
-1. Download this repo and stick it wherever you want it. The repo provides:
+1. Download this repo and stick it wherever you want it. The repo provides the only 5 files you need to get it working:
 
 	+ `.gitignore` to exclude the `vendor` folder which composer generates
 	+ `composer.json` which defines the PHP version, in this case 7.4 or higher
@@ -62,6 +62,8 @@ To set variable from command line:
 > heroku config:set DB_NAME=my_db_name
 > heroku config # display all config vars that are set
 ```
+
+You can also see a list of the config vars in the dashboard on heroku.com
 
 ### Add basic .htaccess authentication
 
