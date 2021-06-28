@@ -78,6 +78,18 @@ Require valid-user
 
 The .htpasswd file should go in a folder located at `www/.htpasswd`.
 
+### Force https:// access
+
+In the `web/.htaccess` file:
+
+```
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+```
+
 ### Scale number of dynos from 0 -> 1
 
 ```bash
