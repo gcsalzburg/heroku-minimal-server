@@ -23,7 +23,7 @@ This is the easiest way to serve a frontend (HTML/JS) site that has no build ste
 
 ```bash
 > git init
-> git remote add origin https://github.com/gcsalzburg/heroku-minimal-server.git
+> git remote add origin https://github.com/gcsalzburg/XXXXXX.git
 > git add *
 > git commit -m "Add skeleton"
 > git branch -M main
@@ -72,11 +72,11 @@ In the `web/.htaccess` file:
 ```
 AuthType Basic
 AuthName "Dashboard Login"
-AuthUserFile /app/www/.htpasswd
+AuthUserFile /app/secure/.htpasswd
 Require valid-user
 ```
 
-The .htpasswd file should go in a folder located at `www/.htpasswd`.
+The .htpasswd file should go in a folder located at `secure/.htpasswd`.
 
 ### Force https:// access
 
